@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+.contenedorImagen {
+    background: url('banner_caitlyn.jpg') repeat;
+    
+    padding: 60px;
+    
+}
+
+#campeones img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+#campeones iframe {
+    width:280px; 
+    height:145px;
+    margin-top: 25px;
+    display: flex;
+    margin-left: 50px;
+}
+
+#campeones h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    margin-top: 28px;
+    display: flex;
+
+}
+#campeones p {
+    display: flex;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+
+
+}
