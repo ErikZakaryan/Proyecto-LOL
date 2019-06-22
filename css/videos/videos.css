@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-.contenedorImagen {
+#videos {
     background: url('banner_caitlyn.jpg') repeat;
     
     padding: 60px;
