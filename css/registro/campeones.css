@@ -1,0 +1,80 @@
+#campeones {
+    background: rgb(50, 37, 77);
+    
+}
+
+
+#campeones h5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#campeones .contenedor {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: black;
+ 
+
+}
+
+
+#campeones h2 {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+#campeones img {
+    width: 180px;
+    height: 180px;
+  
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+ 
+    
+}
+
+
+#campeones cartas {
+    margin: 15px;
+    background: rgb(50, 37, 77);
+}
+
+.card-img-top:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 10px 10px black;
+   
+    
+}
+
+@media (min-width: 480px) {
+    .card {
+        width: auto;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: auto;
+    
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+    
+/* falta modo tablet*/
+        
+    }
+}
+
