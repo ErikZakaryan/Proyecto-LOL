@@ -3,12 +3,23 @@
   <input type="checkbox" id="menu-bar">
   <label class="icon-menu-1" for="menu-bar"></label>
   <nav class="menu">    
-    <a href="index.html"  class="nav-link" style="color: rgb(255, 255, 255)">Inicio</a>  
+    <a class="nav-link" onclick="cambioComponente('inicio')" style="color: rgb(255, 255, 255)">Inicio</a>  
+    <a class="nav-link" onclick="cambioComponente('videos')" style="color: rgb(255, 255, 255)">Videos</buttion>   
+    <a class="nav-link" onclick="cambioComponente('registro')" style="color:rgb(255, 255, 255)">Registrarse</a> 
+    <a class="nav-link" onclick="cambioComponente('login')" style="color:rgb(255, 255, 255)">Iniciar Sesion</a> 
+    <!-- <a href="index.html"  class="nav-link" style="color: rgb(255, 255, 255)">Inicio</a>  
     <a href="videos.html" class="nav-link" style="color: rgb(255, 255, 255)">Videos</a>   
     <a href="registro.html" class="nav-link" style="color:rgb(255, 255, 255)">Registrarse</a> 
-    <a href="login.html" class="nav-link" style="color:rgb(255, 255, 255)">Iniciar Sesion</a> 
+    <a href="login.html" class="nav-link" style="color:rgb(255, 255, 255)">Iniciar Sesion</a>  -->
   </nav>
 </div>
+
+<script>
+  var cambioComponente = function(nombrePagina){
+    $("main").html('')
+    $("main").load('./templates/' + nombrePagina + ".html")
+  }
+</script>
 
 <style>
   #menu-bar {
@@ -31,6 +42,9 @@
     transition: all 0.5s;
     transform: translateX(-100%);
     font-size: 20px;
+  }
+  a {
+    cursor: pointer !important;
   }
   .menu a {
     display: block;
@@ -67,4 +81,88 @@
       display: none;
     }
   }
+
+/* ---------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    color: aliceblue;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+
+}
+
+h1 {
+    float: left;
+     -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+        font-size: 18px;
+        color: transparent; 
+        text-align: center; 
+        font-size: 40px;
+}
+
+header .contenedor {
+    display: table;
+}
+ section {
+     width: 100%;
+     margin-bottom: 25px;
+
+ }
+ 
+ footer .contenedor {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding-bottom: 25px;
+ }
+
+ .copy {
+     font-size: 20px;
+ }
+
+ .redes {
+     width: 100%;
+     text-align: center;
+     font-size: 28px;
+ }
+
+ .redes a {
+     color: black;
+     text-decoration: none;
+     
+ }
+
+
+
+ .redes a:hover {
+    color: rgb(0, 0, 0);
+    font-size:45px;
+    font-weight: bold;   
+  }
+
+ @media (min-width:1024px) {
+     .contenedor {
+         width: 1000px;
+     }
+ }
 </style>
